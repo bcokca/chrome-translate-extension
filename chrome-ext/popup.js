@@ -34,12 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
       if(!selection || selection == ''){
           myElement.html("Please select your text!");
       }else{
-          // $("#text").html("burhan_");
-
-          console.log('selection', selection);
           myElement.html('translating ... ');
 
-          $.post( "http://localhost:3002/translate", {from: 'en', to: 'tr', text: selection[0]},
+          $.post( "https://chrome-extension-translator.herokuapp.com/translate", {from: 'en', to: 'tr', text: selection[0]},
               function( data ) {
                 myElement.html( data );
           });
