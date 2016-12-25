@@ -1,2 +1,3 @@
-# chrome-translate-extension
-Translate the selected text
+# Translate chrome extension
+
+For now by default it is english to turkish
